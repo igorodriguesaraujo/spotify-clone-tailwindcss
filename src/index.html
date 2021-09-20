@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwinds CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Spotify | Clone</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="w-full bg-black">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 items-center p-2 md:py-2">
+
+                <!-- Logotipo -->
+                <img class="block w-36" src="./images/logo.png" alt="logo">
+                
+                <!-- Menu Primario -->
+                <div class="flex justify-end items-center">
+                    <!-- Menu -->
+                    <ul class="hidden lg:flex space-x-6 mr-14 pr-8 border-r">
+                        <li><a class="font-bold text-white hover:text-opacity-50" href="#premium">Premium</a></li>
+                        <li><a class="font-bold text-white hover:text-opacity-50" href="#suporte">Suporte</a></li>
+                        <li><a class="font-bold text-white hover:text-opacity-50" href="#baixar">Baixar</a></li>
+                    </ul>
+                    
+                    <!-- Profile -->
+                    <span class="flex justify-end items-center">
+                        <img class="block rounded-full w-10" src="./images/profile.jpg" alt="profile">
+                        <a href="#profile" class="flex items-center">
+                            <strong class="hidden pl-2 lg:block text-white hover:text-green-500">
+                                Perfil
+                            </strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <div class="w-full bg-purple-300 md:p-12">
+        <div class="container mx-auto md:px-6 px-4 py-5 lg:grid lg:grid-cols-2">
+            <div class="flex flex-col">
+                <h2 class="font-bold text-xl md:text-6xl md:my-6 md:leading-tight">
+                    Curta 3 meses de <br> Premium grátis
+                </h2>
+                <p class="font-semibold text-lg md:text-xl my-6">
+                    Curta músicas sem anúnicios, ouça no modo offline e muto mais. Cancele quando quiser.
+                </p>
+                <a class="block uppercase text-center bg-black text-white font-bold py-2 px-16 rounded-full md:max-w-xs md:py-3" href="#free">
+                    Ganhe 3 meses grátis
+                </a>
+            </div>
+            <div class="flex justify-center lg:justify-end my-24 lg:mt-8">
+                <img class="w-full max-w-sm" src="https://i.scdn.co/image/ab678e040000ed3aa1f1e948141e32c88c0e4980" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="w-full bg-blue-700 md:p-12">
+        <div class="container mx-auto md:px-6 px-4 py-36">
+            <div class="flex flex-col items-center text-center lg:text-left xl:items-start">
+                <h2 class="font-bold text-xl md:text-6xl md:my-6 md:leading-tight text-green-500">
+                    Escutar muda tudo
+                </h2>
+                <p class="font-semibold text-lg md:text-xl my-6 text-green-500 xl:max-w-lg">
+                    Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.
+                </p>
+                <a class="block uppercase text-center bg-green-500 text-blue-700 font-bold py-2 px-16 rounded-full md:max-w-xs md:py-3 whitespace-nowrap" href="#free">
+                    Baixe o spotify free
+                </a>
+            </div>
+            <div class="hidden flex justify-center lg:justify-end my-24 lg:mt-8">
+                <img class="w-full max-w-sm" src="https://i.scdn.co/image/ab678e040000ed3aa1f1e948141e32c88c0e4980" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-black">
+        <div class="container mx-auto px-4 pt-16">
+            <div class="grid">
+                <!-- Links primarios -->
+                <div class="grid md:grid-cols-4">
+                    <!-- logo -->
+                    <div class="w-full max-w-sm md:col-span-4 lg:col-span-1">
+                        <img class="block w-24 md:w-36 mb-6" src="./images/logo.png" alt="logo">
+                    </div>
+
+                    <div class="flex flex-col md:flex-row md:space-x-36 md:col-span-3">
+                        <!-- menu empresa -->
+                        <div class="leading-10 mb-12 flex-shrink-0">
+                            <strong class="text-gray-500 text-sm uppercase">
+                                Empresa
+                            </strong>
+                            <ul>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#sobre">
+                                        Sobre
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#empregos">
+                                        Empregos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#fortherecord">
+                                        For The Record
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- menu comunidade -->
+                        <div class="leading-10 mb-12 flex-shrink-0">
+                            <strong class="text-gray-500 text-sm uppercase">Comunidade</strong>
+                            <ul>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#sobre">
+                                        Para Artistas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#empregos">
+                                        Desenvolvedores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#fortherecord">
+                                        Publicidade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#fortherecord">
+                                        Investidores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#fortherecord">
+                                        Fornecedores
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- menu links úteis -->
+                        <div class="leading-10 mb-12 flex-shrink-0">
+                            <strong class="text-gray-500 text-sm uppercase">Links Úteis</strong>
+                            <ul>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#sobre">
+                                        Suporte
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#empregos">
+                                        Play da Web
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-white hover:text-gray-600" href="#fortherecord">
+                                        Aplicativo Movel Grátis
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- link secundarios -->
+                <div class="grid grid-cols-2 space-x-6 mt-12 mb-6">
+                    <span class="flex flex-col md:flex-row md:space-x-8">
+                        <a class="text-xs text-gray-500 whitespace-nowrap hover:text-green-500 pb-4" href="#">
+                            Legal
+                        </a>
+                        <a class="text-xs text-gray-500 whitespace-nowrap hover:text-green-500 pb-4" href="#">
+                            Centro de Privacidade
+                        </a>
+                        <a class="text-xs text-gray-500 whitespace-nowrap hover:text-green-500 pb-4" href="#">
+                            Política de Privacidade
+                        </a>
+                        <a class="text-xs text-gray-500 whitespace-nowrap hover:text-green-500 pb-4" href="#">
+                            Cookies
+                        </a>
+                        <a class="text-xs text-gray-500 whitespace-nowrap hover:text-green-500 pb-4" href="#">
+                            Sobre Anúnicos
+                        </a>
+                    </span>
+                    <span class="text-right">
+                        <a class="text-xs text-gray-500 hover:text-green-500" href="#">Brasil</a>
+                        <p class="text-xs text-gray-500">2021 Spotify AB</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
